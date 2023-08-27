@@ -1,0 +1,32 @@
+These are notes for the transaction commands
+
+Transaction Command inputs
+| transaction <fields included> 
+starts_with=<field> 
+ends_with=<field> 
+keeporphans<bool>(default false) 
+maxspan=  
+maxpause= (gap between events) 
+maxevents= (number of events in a transaction)
+	keepevicted=true (disregards ends_with)
+		closed_txn=(1 or 0) tags evicted with these
+	maxopenevents= (number of events)
+	mvlist=true (shows chronology of fields) 
+		nullstring=<potato> puts potato if there is a null mvlist
+	mvraw=true (merges all transactions to a single line)
+		delim=”<<<<<” adds this as the delimiter
+Creates extra fields
+duration
+eventcount  
+All this can be stored in a transaction.conf file in the app 
+
+
+index=main sourcetype=access_*
+| transaction JSESSIONID clientip startswith=view endswith=purchase
+| highlight action
+
+index=main sourcetype=access_*
+| transaction JSESSIONID clientip startswith=view endswith=purchase
+| highlight action
+| table clientip duration eventcount
+| sort -duration

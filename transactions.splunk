@@ -20,6 +20,7 @@ duration
 eventcount  
 All this can be stored in a transaction.conf file in the app 
 
+```QUERIES TO PRACTICE WITH ```
 
 index=main sourcetype=access_*
 | transaction JSESSIONID clientip startswith=view endswith=purchase
@@ -30,3 +31,54 @@ index=main sourcetype=access_*
 | highlight action
 | table clientip duration eventcount
 | sort -duration
+
+```KEEPORPHANS (this includes outside the transaction command and lets us use the )```
+index=main sourcetype=access_*
+| transaction action keeporphans=true
+| highlight action
+
+```MAXSPAN looks at the distance between start and stop you can see this with duration```
+index=main sourcetype=access_*
+| transaction JSESSIONID clientip maxspan=2s
+| highlight action
+| table clientip duration eventcount
+| sort -duration
+
+```maxpause looks at the gap betweenevents```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip startswith=view endswith=purchase maxpause=2s
+| highlight action
+
+```maxevents fixes the event count (though in this case it misses one)```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip startswith=view endswith=purchase maxevents=4
+| highlight action
+| sort -eventcount
+
+```keepevicted and closed_txn (closed_txn gives you a 1 or 0 if keepevicted is true)```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip startswith=view endswith=purchase ```view and purchase are completed transactions``` keepevicted=true ```keeps incomplete``` 
+| table clientip action closed_txn
+| sort -closed_txn
+
+```for keepevicted you can see how many events do not complete ```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip startswith=view endswith=purchase 
+```view and purchase are completed transactions``` 
+keepevicted=true ```keeps incomplete``` 
+maxopenevents=2
+| table clientip action closed_txn
+| sort -closed_txn
+
+```cant get mvlist and nullstring to work but they are suposed to give a list of the actions included
+and if a field is not present you can assing a label for null
+but it does this in the raw combined log so does not seem useful
+and it dispeared on me```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip startswith=view endswith=purchase mvlist=false nullstr="potato"
+
+```mvraw and delim present it all in a single string and add a delimiter of your choice```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip startswith=view endswith=purchase  
+mvraw=true 
+delim="  $$$$$$$$$$$$$$$$$$$$   "

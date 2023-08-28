@@ -82,3 +82,7 @@ index=main sourcetype=access_*
 | transaction JSESSIONID clientip startswith=view endswith=purchase  
 mvraw=true 
 delim="  $$$$$$$$$$$$$$$$$$$$   "
+
+```use the transactiontypes.conf file put it in the right place and call it this way```
+index=main sourcetype=access_* 
+| transaction JSESSIONID clientip name=potato

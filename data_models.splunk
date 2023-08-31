@@ -1,0 +1,15 @@
+How to create/write data models in Splunk
+https://www.youtube.com/watch?v=N3FL6rawDLQ&list=PLSr58-DJdRybowRyR8gp4cbLtoQektcze
+
+Records 1 root data sets
+Event data sets (no piepline search, only condition)
+Root data sets (give complex search or transforming comand)
+
+```Constraints ```
+index=zomato "Country Code"=*
+
+
+```Base search```
+index="zomato" "Country Code"="*" "Country Code"!=1
+| lookup countries.csv country-code as "Country Code" output name as name region as region sub-region as sub-region
+| stats count by "Country Code" name region sub-region

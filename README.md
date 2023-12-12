@@ -11,3 +11,22 @@ https://www.youtube.com/watch?v=l8eqeT68R9U
 Was unable to upload data until the server.conf file tag was added
 [diskUsage]
 minFreeSpace = 10
+
+
+## Key topics to study for exam
+- Data Models
+    - CIM
+    - acceleration
+- Transaction Command
+- Event actions
+- macros
+- pivots
+- Knolege Manager
+- Event types
+- commands
+     - fill null
+     - chart
+     - timechart
+     - eval
+     - search
+

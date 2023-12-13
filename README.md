@@ -30,3 +30,5 @@ minFreeSpace = 10
      - eval
      - search
 
+## Study Plan for this week
+- Transaction Command 

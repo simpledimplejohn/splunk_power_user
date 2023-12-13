@@ -1,5 +1,9 @@
 These are notes for the transaction commands
 
+Transaction Command:
+https://www.youtube.com/watch?v=l8eqeT68R9U
+
+
 Transaction Command inputs
 | transaction <fields included> 
 starts_with=<field> 
@@ -75,7 +79,8 @@ maxopenevents=2
 and if a field is not present you can assing a label for null
 but it does this in the raw combined log so does not seem useful
 and it dispeared on me
-UPDATE mvlist is a list, it presents the actions in order of how they were performed by the user (in the 
+UPDATE
+ mvlist is a list, it presents the actions in order of how they were performed by the user (in the 
 case of the action command, you can tell what order the actions ocured)```
 index=main sourcetype=access_* 
 | transaction JSESSIONID clientip startswith=view endswith=purchase mvlist=false nullstr="potato"

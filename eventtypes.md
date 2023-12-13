@@ -5,14 +5,15 @@ Assigned on search time
 Multi Valu Field
 Cost in Search Performance
 
+
 Operations
 1. field extraction
-2. field transform
+2. field transform (field extraction with transform)
 3. key-value field extraction KV_MODE?? (props.conf stanza)
 4. field aliasing Fieldalias (props.conf)
 5. clculated fields props.conf (EVAL)
 6. lookup
-7. Event type
+7. Event type 
 8. tag the last thing--so can not be conditional 
 
 Event types must follow this 

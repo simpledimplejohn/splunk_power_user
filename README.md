@@ -68,3 +68,4 @@ A. Auto-Extracted fields can be hidden in Pivot.
 B. Auto-Extracted fields can have their data type changed.
 C. Auto-Extracted fields can be given a friendly name for use in Pivot.
 D. Auto-Extracted fields can be added if they already exist in the dataset with constraints.
+

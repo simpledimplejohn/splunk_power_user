@@ -1,5 +1,7 @@
 # Tags
 
+search is case sensitive 
+
 based on field values (as opposed to eventtypes which do this by search query)
 
 Last thing to get assessed so that means you can tag an eventype 

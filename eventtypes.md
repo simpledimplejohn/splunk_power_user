@@ -1,4 +1,8 @@
 ## Event Types
+Is a saved search string that when it shows up will show a color
+and if its called it will run the query
+
+
 Catagorize data KO
 Based on query string (as oposed to tags based on field value)
 Assigned on search time

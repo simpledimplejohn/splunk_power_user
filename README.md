@@ -12,14 +12,14 @@ minFreeSpace = 10
 
 ## Key topics to study for exam
 - Data Models
-    - CIM
+    -- CIM
     - acceleration
-- Transaction Command
-- Work Flow Actions
+    - pivots
+-- Transaction Command
+-- Work Flow Actions
 - macros
-- pivots
-- Knolege Manager
-- Event types
+-- Knolege Manager
+-- Event types
 - commands
      - fill null
      - chart
@@ -29,3 +29,18 @@ minFreeSpace = 10
 
 ## Study Plan for this week
 - Transaction Command 
+
+
+## RE-LOADING SPLUNK
+- stop splunk (somehow)
+- drag it to the trash (save any apps you've made)
+- go to splunk.com and download the trial again
+- install 
+
+
+## EXTRA NOTES
+SEDCMD ananomyses data in the props.conf files, uses regex
+
+FOLLOW UP ON 
+- calcluated fields
+- field extraction required ?

@@ -1,3 +1,34 @@
+Data models
+
+Objects:
+- Events (index= host=)
+- Searches (eval stats)
+- Transactions   (like the transaction command, combinending multiple)
+
+Fields: (Object Attributes)
+- auto (made by splunk)
+- lookup 
+- eval (made in the eval expression)
+- regex
+
+
+BUILDING A DATA MODEL
+
+Add Data
+    Events (simplest)
+    or 
+    Search
+Set fields
+    lookup
+    auto
+    extract
+    
+
+
+
+
+
+
 How to create/write data models in Splunk
 https://www.youtube.com/watch?v=N3FL6rawDLQ&list=PLSr58-DJdRybowRyR8gp4cbLtoQektcze
 

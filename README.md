@@ -29,10 +29,6 @@ minFreeSpace = 10
      - eval
      - search
 
-## Study Plan for this week
-- Transaction Command 
-
-
 ## RE-LOADING SPLUNK
 - stop splunk (somehow)
 - drag it to the trash (save any apps you've made)
@@ -41,6 +37,17 @@ minFreeSpace = 10
 
 
 ## EXTRA NOTES
+
+Operations
+1. field extraction
+2. field transform (field extraction with transform)
+3. key-value field extraction KV_MODE?? (props.conf stanza)
+4. field aliasing Fieldalias (props.conf)
+5. calculated fields props.conf (EVAL)
+6. lookup
+7. Event type 
+8. tag the last thing--so can not be conditional 
+
 SEDCMD ananomyses data in the props.conf files, uses regex
 
 FOLLOW UP ON 

@@ -1,5 +1,7 @@
 WORKFLOW ACTIONS:
 
+found in the fields menue
+
 - Build event type
 - Extract Fields 
 - Show source 

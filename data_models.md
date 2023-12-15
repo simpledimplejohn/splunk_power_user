@@ -1,30 +1,4 @@
-Data models
-    Alerts
-    Application State
-    Authentication
-    Certificates
-    Change
-    Change Analysis
-    CIM Validation (S.o.S)
-    Databases
-    Data Loss Prevention
-    Email
-    Endpoint
-    Event Signatures
-    Interprocess Messaging
-    Intrusion Detection
-    Inventory
-    Java Virtual Machines (JVM)
-    Malware
-    Network Resolution (DNS)
-    Network Sessions
-    Network Traffic
-    Performance
-    Splunk Audit Logs
-    Ticket Management
-    Updates
-    Vulnerabilities
-    Web
+
 
 Objects:
 - Events (index= host=)

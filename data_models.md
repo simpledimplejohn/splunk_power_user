@@ -1,15 +1,16 @@
-
+These are a knolege object
 
 Objects:
 - Events (index= host=)
 - Searches (eval stats)
 - Transactions   (like the transaction command, combinending multiple)
 
-Fields: (Object Attributes)
+Fields: (Object Attributes) auto-extracted, eval expression, regular expression
 - auto (made by splunk)
 - lookup 
 - eval (made in the eval expression)
 - regex
+- geo location 
 
 
 BUILDING A DATA MODEL
@@ -17,11 +18,23 @@ BUILDING A DATA MODEL
 Add Data
     Events (simplest)
     or 
-    Search
+    Search  
 Set fields
     lookup
     auto
-    extract
+    extract   The fields can include calculated fields, user-defined field extractions, and fields added to your data by lookups.
+
+DataSets
+Event datasets, search datasets, transaction datasets, and child datasets.
+The top-level event, search, and transaction datasets in data models are collectively referred to as "root datasets."
+
+CONSTRAINTS-- this is just another word for the search query
+- transaction constriants means using the transaction command
+
+ACCELERATION:
+-must have a root dataset
+- and a streaming command
+
     
 
 

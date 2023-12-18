@@ -55,7 +55,7 @@ FOLLOW UP ON
 - field extraction required ?g
 - tag searches are case senstive
 - macros again
-- Which of the following can be used with the eval command tostring function? (Choose all that apply.)
+--- Which of the following can be used with the eval command tostring function? (Choose all that apply.)
     A. "hex"
     B. "commas"
     C. "decimal"

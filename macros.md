@@ -13,11 +13,20 @@ ARGUMENTS the field names being used
 
 `eval total = $money$ * ($money$ * $perc$)/100` not an eval macro 
 
+bonus percent, add a bonus
+
+validation expression return a boolean 
+`isnum(bonus)`
+isint(val) is an integer
+isbool(val)
+isnotnull(val)
+isnull(val)
+isstr(string)
 
 
+EVAL MACRO ??  dynaic 
+this returns a search string 
 
-If you re-use a search use macros
-then if you need to change the search you only need to do it in one place
 
 settings/advanced search
 

@@ -35,6 +35,23 @@ minFreeSpace = 10
 - go to splunk.com and download the trial again
 - install 
 
+## Jobs Inspector
+- Header (events, scanned, time)
+- Exicution Cost
+- Properites (optimized search)
+
+Events per second (EPS)
+- number of events scanned/ time taken
+Avtivities/Jobs 
+- job manager 
+
+## Trendline
+- | trendline takes a rolling average
+- sma5(value) simple moving average
+- ema5(value) exponentaila moving averate
+- wma5(value) weighted moving average
+    - number is 2 - 100000
+number is how many values it counts to calculate the average
 
 ## EXTRA NOTES
 

@@ -28,9 +28,19 @@ SET PERMISSIONS
 SEARCH:
 runs a secondary search
 tokenized
+enter a time range when the action is built
+    or use the time range that was run in the search
 
+GET
+opens a link based on the fields
+only used to request data
+is visable in the url
+could be used to post to a dashboard
 
-
+POST
+url to post to 
+arguments (key value pairs to post)
+not visable in the URL
 
 USING A CONF FILES
 workflow_actions.conf store

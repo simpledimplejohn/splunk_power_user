@@ -52,7 +52,7 @@ SEDCMD ananomyses data in the props.conf files, uses regex
 
 FOLLOW UP ON 
 - calcluated fields
-- field extraction required ?g
+- field extraction required ?
 - tag searches are case senstive
 - macros again
 --- Which of the following can be used with the eval command tostring function? (Choose all that apply.)
@@ -64,8 +64,8 @@ FOLLOW UP ON
     B. Accelerated data models cannot be edited.
     C. Private data models cannot be accelerated.
     D. You must have administrative permissions or the accelerate_datamodel capability to accelerate a data model.
-- fillnull command with nothing sepcificed?  regurns 0?
--  Search workflow action,??
+-- fillnull command with nothing sepcificed?  regurns 0?
+--  Search workflow action,??
 - D. tag::<field>=<tagname>
 - It is no longer possible to edit the field extraction in the Field Extractor (FX) UI.
 

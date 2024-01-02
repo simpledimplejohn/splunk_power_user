@@ -53,6 +53,23 @@ Avtivities/Jobs
     - number is 2 - 100000
 number is how many values it counts to calculate the average
 
+index=* bytes=* 
+| timechart span=1m sum(bytes) as bytes
+| trendline sma100(bytes) as trend
+| where bytes > trend
+
+## eval case()
+index=main status=*
+| eval result = case(status == 200, "okay", status == 500, "bad")
+| stats count by result
+
+## eval tostring()
+| makeresults
+| eval now = 1703025610
+| eval nowstring = tostring(now, "duration")
+| table nowstring
+
+
 ## EXTRA NOTES
 
 Operations

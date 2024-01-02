@@ -34,7 +34,8 @@ CONSTRAINTS-- this is just another word for the search query
 ACCELERATION:
 -must have a root dataset
 - and a streaming command
-
+- cannot be private
+- must have admin privilages 
     
 
 

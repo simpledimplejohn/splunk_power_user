@@ -25,6 +25,11 @@ eventcount
 closed_txn
 All this can be stored in a transaction.conf file in the app 
 
+
+index=main sourcetype="access_combined_wcookie"
+| transaction JSESSIONID clientip startswith=view endswith=purchase keepevicted=true keeporphans=true
+| table duration eventcount closed_txn 
+
 ```QUERIES TO PRACTICE WITH ```
 
 index=main sourcetype=access_*
